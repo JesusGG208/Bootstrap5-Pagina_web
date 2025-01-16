@@ -3,7 +3,7 @@
 elementos de la página siguientes. X
 3. Tipografía. X
 4. Colores. X
-5. Tablas. 
+5. Tablas. X
 6. Imágenes. X
 7. Jumbotron/div. X
 8. Alerts. X
@@ -11,6 +11,6 @@ elementos de la página siguientes. X
 10. Grupos de botones.
 11. Badges. X
 12. Barras de progreso.
-13. Spinners.
+13. Spinners. X
 14. Paginado. X
 15. List Groups.

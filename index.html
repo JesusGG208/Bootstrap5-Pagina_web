@@ -16,7 +16,7 @@
     <div class="container-fluid bg-primary h1 p-4 fw-bold text-center">
         Noticias deportivas Lorem Ipsum
     </div>
-    <div class="container my-4">
+    <div class="container mt-4">
         <div class="row">
             <div class="col-lg-8">
                 <img src="img/supercopa.jpeg" class="rounded mx-auto d-block img-fluid" alt="Supercopa" width="450">
@@ -39,10 +39,11 @@
                         ha servido para las remontadas.</p>
                 </div>
             </div>
-            <div class="col-lg-4 mt-4">
+            <div class="col-lg-4 mt-1">
                 <div class="p-4 bg-success rounded">
                     <h4 class="fw-bold text-white">Noticias <span class="badge bg-danger">Última hora</span></h4>
-                    <ul class="nav">
+                    <span class="spinner-border" id="spinner"></span>
+                    <ul class="nav" id="nav">
                         <li class="nav-item">
                         <a href="https://www.marca.com/futbol/mercado-fichajes/2025/01/14/nuevo-super-contrato-cristiano-ampliara-temporada-200-millones-euros.html"
                             class="text-white nav-link">Nuevo súper contrato para Cristiano: ampliará una temporada por
@@ -66,13 +67,55 @@
                         </li>
                     </ul>
                 </div>
+                <div class="container mt-4">
+                    <h4 class="fw-bold text-center text-white">Temperaturas en los próximos 3 días</h4>
+                    <table class="table table-dark table-hover">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>10:00</th>
+                                <th>13:00</th>
+                                <th>16:00</th>
+                                <th>19:00</th>
+                                <th>21:00</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Lunes</td>
+                                <td>12ºC</td>
+                                <td>13ºC</td>
+                                <td>15ºC</td>
+                                <td>12ºC</td>
+                                <td>9ºC</td>
+                            </tr>
+                            <tr>
+                                <td>Martes</td>
+                                <td>12ºC</td>
+                                <td>13ºC</td>
+                                <td>15ºC</td>
+                                <td>12ºC</td>
+                                <td>9ºC</td>
+                            </tr>
+                            <tr>
+                                <td>Miércoles</td>
+                                <td>12ºC</td>
+                                <td>13ºC</td>
+                                <td>15ºC</td>
+                                <td>12ºC</td>
+                                <td>9ºC</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
+        
         <div class="row mt-4">
             <div class="col">
                 <ul class="pagination justify-content-center">
                     <li class="page-item disabled"><a class="page-link" href="#">Anterior</a></li>
-                    <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
                     <li class="page-item"><a class="page-link" href="pag2.html">2</a></li>
                     <li class="page-item"><a class="page-link" href="pag3.html">3</a></li>
                     <li class="page-item"><a class="page-link" href="pag2.html">Próxima</a></li>
@@ -80,6 +123,15 @@
             </div>
         </div>
     </div>
+    <script>
+        let nav = document.getElementById("nav");
+        let spinner = document.getElementById("spinner");
+        nav.style.visibility = 'hidden';
+        setTimeout(() => {
+            spinner.remove();
+            nav.style.visibility = 'visible';
+        }, 2000);
+    </script>
 </body>
 
 </html>
