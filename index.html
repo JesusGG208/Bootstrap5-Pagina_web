@@ -12,14 +12,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<body class="bg-dark">
-    <div class="container-fluid bg-primary h1 p-4 fw-bold text-center">
+<body>
+    <div class="container-fluid bg-danger h1 p-4 fw-bold text-center">
         Noticias deportivas Lorem Ipsum
+        <button class="btn" id="btnModoOscuro">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
+                <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286"/>
+            </svg>              
+        </button>
     </div>
     <div class="container mt-4">
         <div class="row">
             <div class="col-lg-8">
-                <img src="img/supercopa.jpeg" class="rounded mx-auto d-block img-fluid" alt="Supercopa" width="450">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/WqCTLEbeUUI?si=iqSft7H4lNd-VU4Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" class="mx-auto d-block" allowfullscreen></iframe>
 
                 <div class="alert alert-info alert-dismissible fade show mt-4">
                     <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
@@ -28,7 +33,7 @@
                         class="alert-link">Más información</a>
                 </div>
 
-                <div class="mt-4 p-5 text-white bg-secondary rounded">
+                <div class="mt-4 p-5 bg-danger rounded">
                     <h2 class="fw-bold">El Barça arrasa en la final de la Supercopa con un 2-5 ante el Madrid</h2>
                     <p>El Real Madrid no ha estado en ningún momento en la final de la Supercopa de España. Quizá en los
                         primeros minutos, cuando lo sostuvo Courtois y una carrera de Mbappé puso a los blancos por
@@ -40,36 +45,36 @@
                 </div>
             </div>
             <div class="col-lg-4 mt-1">
-                <div class="p-4 bg-success rounded">
-                    <h4 class="fw-bold text-white">Noticias <span class="badge bg-danger">Última hora</span></h4>
+                <div class="p-4 bg-danger rounded">
+                    <h4 class="fw-bold">Noticias <span class="badge bg-success">Última hora</span></h4>
                     <span class="spinner-border" id="spinner"></span>
                     <ul class="nav" id="nav">
                         <li class="nav-item">
                         <a href="https://www.marca.com/futbol/mercado-fichajes/2025/01/14/nuevo-super-contrato-cristiano-ampliara-temporada-200-millones-euros.html"
-                            class="text-white nav-link">Nuevo súper contrato para Cristiano: ampliará una temporada por
+                            class="nav-link">Nuevo súper contrato para Cristiano: ampliará una temporada por
                             200 millones de euros</a>
                         </li>
                         <li class="nav-item">
                         <a href="https://as.com/baloncesto/acb/dennis-smith-da-por-hecho-su-fichaje-por-el-madrid-n/"
-                            class="text-white nav-link">Dennis Smith da por hecho su fichaje por el Madrid</a>
+                            class="nav-link">Dennis Smith da por hecho su fichaje por el Madrid</a>
                         </li>
                         <li class="nav-item">
                         <a href="https://as.com/baloncesto/euroliga/el-madrid-se-lleva-al-limite-otro-duelo-de-los-records-n/"
-                            class="text-white nav-link">El Madrid se lleva al límite otro duelo de los récords</a>
+                            class="nav-link">El Madrid se lleva al límite otro duelo de los récords</a>
                         </li>
                         <li class="nav-item">
                         <a href="https://as.com/baloncesto/euroliga/el-panathinaikos-inaugura-una-semana-clave-n/"
-                            class="text-white nav-link">El Panathinaikos inaugura una semana clave</a>
+                            class="nav-link">El Panathinaikos inaugura una semana clave</a>
                         </li>
                         <li class="nav-item">
                         <a href="https://www.mundodeportivo.com/futbol/fc-barcelona/20250115/1002387014/deco-convence-araujo-quede.html"
-                            class="text-white nav-link">Deco convence a Araujo para que se quede</a>
+                            class="nav-link">Deco convence a Araujo para que se quede</a>
                         </li>
                     </ul>
                 </div>
                 <div class="container mt-4">
-                    <h4 class="fw-bold text-center text-white">Temperaturas en los próximos 3 días</h4>
-                    <table class="table table-dark table-hover">
+                    <h4 class="fw-bold text-center">Temperaturas en los próximos 3 días</h4>
+                    <table class="table table-danger table-hover">
                         <thead>
                             <tr>
                                 <th></th>
@@ -126,11 +131,15 @@
     <script>
         let nav = document.getElementById("nav");
         let spinner = document.getElementById("spinner");
+        let botonOscuroMode = document.getElementById("btnModoOscuro");
         nav.style.visibility = 'hidden';
         setTimeout(() => {
             spinner.remove();
             nav.style.visibility = 'visible';
         }, 2000);
+        botonOscuroMode.addEventListener("change", () => {
+
+        }); 
     </script>
 </body>
 
