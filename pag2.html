@@ -10,63 +10,114 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        #btnModoOscuro {
+            display: none;
+        }
+    </style>
 </head>
 
-<body class="bg-dark">
-    <div class="container-fluid bg-primary h1 p-4 fw-bold text-center">
-        Noticias deportivas Lorem Ipsum
-    </div>
-    <div class="container mt-4">
+<body>
+    <div class="container-fluid bg-primary p-4 fw-bold text-center">
         <div class="row">
-            <div class="col-lg-8">
-                <img src="img/valencia-ourense.webp" class="rounded mx-auto d-block img-fluid" alt="Supercopa" width="450">
-                <div class="mt-4 p-5 text-white bg-secondary rounded">
-                    <h2 class="fw-bold">El Ourense CF plantó cara al Valencia en O Couto en la Copa del Rey</h2>
-                    <p>El estadio de O Couto fue testigo de una noche repleta de emociones con un Ourense CF que, por primera
-                        vez en su historia, disputaba unos octavos de final de la Copa del Rey y lo hacía ante un Valencia CF
-                        que, aunque superior en posesión, tuvo que sufrir para lidiar con la intensidad, la ilusión y el empuje
-                        de un conjunto local que acabó cediendo con la cabeza alta.
-                    </p>
+            <div class="col-sm-11">
+                <h1>Noticias deportivas Lorem Ipsum</h1>
+            </div>
+            <div class="col-sm-1">
+                <button class="btn" id="btnModoOscuro">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-moon" viewBox="0 0 16 16">
+                        <path
+                            d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286" />
+                    </svg>
+                </button>
+                <button class="btn" id="btnModoClaro">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-sun"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-9">
+                <div class="p-3">
+                    <img src="img/valencia-ourense.webp" class="rounded mx-auto d-block img-fluid" alt="Ourense CF"
+                        width="450">
+                    <div class="container mt-4 p-5">
+                        <h2 class="fw-bold">El Ourense CF plantó cara al Valencia en O Couto en la Copa del Rey</h2>
+                        <p>
+                            El estadio de O Couto fue testigo de una noche repleta de emociones con un Ourense CF que,
+                            por primera vez en su historia, disputaba unos octavos de final de la Copa del Rey y lo
+                            hacía ante un Valencia CF que, aunque superior en posesión, tuvo que sufrir para lidiar con
+                            la intensidad, la ilusión y el empuje de un conjunto local que acabó cediendo con la cabeza
+                            alta.
+                        </p>
+                        <p>
+                            El Valencia comenzó el encuentro con mucha posesión, dominando los primeros compases del
+                            juego. Desde el primer minuto, los de Mestalla mostraron su capacidad para mover la pelota,
+                            sobre todo por las bandas, donde Foulquier y Jesús Vázquez estaban muy activos, desbordando
+                            en varias ocasiones a la defensa gallega. Así la primera gran oportunidad llegó en el minuto
+                            9, cuando Sadiq, en un centro de Jesús Vázquez, falló por poco un remate de cabeza que
+                            parecía más sencillo de lo que terminó siendo. Un error que evidenció que el Valencia no
+                            estaba encontrando la facilidad para perforar la puerta del Ourense.
+                        </p>
+                        <p>
+                            Poco a poco, con un fútbol directo y la ayuda de Carbonell en la medular los locales
+                            tuvieron la suya. Jairo Noriega se internó en el área y disparó a puerta, pero Dimitrievski,
+                            con mucha seguridad, evitó que el marcador se abriera.
+                        </p>
+                    </div>
+                    <ul class="pagination justify-content-center mt-5">
+                        <li class="page-item"><a class="page-link" href="index.html">Anterior</a></li>
+                        <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="pag3.html">3</a></li>
+                        <li class="page-item"><a class="page-link" href="pag3.html">Próxima</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-lg-4 mt-1">
-                <div class="p-4 bg-success rounded">
-                    <h4 class="fw-bold text-white">Noticias <span class="badge bg-danger">Última hora</span></h4>
+            <div class="col-3 vh-100 border-start">
+                <div class="container p-4 bg-warning bg-opacity-90 mt-4 rounded">
+                    <h4 class="fw-bold text-dark">Noticias <span class="badge bg-danger">Actualizado</span></h4>
                     <span class="spinner-border" id="spinner"></span>
                     <ul class="nav" id="nav">
                         <li class="nav-item">
-                        <a href="https://www.marca.com/futbol/mercado-fichajes/2025/01/14/nuevo-super-contrato-cristiano-ampliara-temporada-200-millones-euros.html"
-                            class="text-white nav-link">Nuevo súper contrato para Cristiano: ampliará una temporada por
-                            200 millones de euros</a>
+                            <a href="https://www.marca.com/futbol/mercado-fichajes/2025/01/14/nuevo-super-contrato-cristiano-ampliara-temporada-200-millones-euros.html"
+                                class="nav-link">Nuevo súper contrato para Cristiano: ampliará una temporada por
+                                200 millones de euros</a>
                         </li>
                         <li class="nav-item">
-                        <a href="https://as.com/baloncesto/acb/dennis-smith-da-por-hecho-su-fichaje-por-el-madrid-n/"
-                            class="text-white nav-link">Dennis Smith da por hecho su fichaje por el Madrid</a>
+                            <a href="https://as.com/baloncesto/acb/dennis-smith-da-por-hecho-su-fichaje-por-el-madrid-n/"
+                                class="nav-link">Dennis Smith da por hecho su fichaje por el Madrid</a>
                         </li>
                         <li class="nav-item">
-                        <a href="https://as.com/baloncesto/euroliga/el-madrid-se-lleva-al-limite-otro-duelo-de-los-records-n/"
-                            class="text-white nav-link">El Madrid se lleva al límite otro duelo de los récords</a>
+                            <a href="https://as.com/baloncesto/euroliga/el-madrid-se-lleva-al-limite-otro-duelo-de-los-records-n/"
+                                class="nav-link">El Madrid se lleva al límite otro duelo de los récords</a>
                         </li>
                         <li class="nav-item">
-                        <a href="https://as.com/baloncesto/euroliga/el-panathinaikos-inaugura-una-semana-clave-n/"
-                            class="text-white nav-link">El Panathinaikos inaugura una semana clave</a>
+                            <a href="https://as.com/baloncesto/euroliga/el-panathinaikos-inaugura-una-semana-clave-n/"
+                                class="nav-link">El Panathinaikos inaugura una semana clave</a>
                         </li>
                         <li class="nav-item">
-                        <a href="https://www.mundodeportivo.com/futbol/fc-barcelona/20250115/1002387014/deco-convence-araujo-quede.html"
-                            class="text-white nav-link">Deco convence a Araujo para que se quede</a>
+                            <a href="https://www.mundodeportivo.com/futbol/fc-barcelona/20250115/1002387014/deco-convence-araujo-quede.html"
+                                class="nav-link">Deco convence a Araujo para que se quede</a>
                         </li>
                     </ul>
                 </div>
+                <hr>
                 <div class="container mt-4">
-                    <h4 class="fw-bold text-center text-white">Temperaturas en los próximos 3 días</h4>
-                    <table class="table table-dark table-hover">
+                    <h4 class="fw-bold text-center bg-warning text-dark rounded">Temperaturas en los próximos 3 días
+                    </h4>
+                    <table class="table table-warning table-hover">
                         <thead>
                             <tr>
                                 <th></th>
                                 <th>10:00</th>
-                                <th>13:00</th>
                                 <th>16:00</th>
-                                <th>19:00</th>
                                 <th>21:00</th>
                             </tr>
                         </thead>
@@ -74,53 +125,50 @@
                             <tr>
                                 <td>Lunes</td>
                                 <td>12ºC</td>
-                                <td>13ºC</td>
                                 <td>15ºC</td>
-                                <td>12ºC</td>
                                 <td>9ºC</td>
                             </tr>
                             <tr>
                                 <td>Martes</td>
                                 <td>12ºC</td>
-                                <td>13ºC</td>
                                 <td>15ºC</td>
-                                <td>12ºC</td>
                                 <td>9ºC</td>
                             </tr>
                             <tr>
                                 <td>Miércoles</td>
                                 <td>12ºC</td>
-                                <td>13ºC</td>
                                 <td>15ºC</td>
-                                <td>12ºC</td>
                                 <td>9ºC</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-            </div>
-        </div>
-        <div class="row mt-4">
-            <div class="col">
-                <ul class="pagination justify-content-center">
-                    <li class="page-item"><a class="page-link" href="index.html">Anterior</a></li>
-                    <li class="page-item"><a class="page-link" href="index.html">1</a></li>
-                    <li class="page-item active"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="pag3.html">3</a></li>
-                    <li class="page-item"><a class="page-link" href="pag3.html">Próxima</a></li>
-                </ul>
+                <hr>
+                <div class="container mt-4">
+                    <h2 class="fw-bold text-center">Donaciones para Valencia</h2>
+                    <div class="progress" style="height:50px">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning text-dark"
+                            style="width:85%">85.000 €</div>
+                    </div>
+                    <div class="btn-group justify-content-center mt-2">
+                        <button type="button" class="btn btn-warning">Tarjeta</button>
+                        <button type="button" class="btn btn-warning">Paypal</button>
+                    </div>
+                </div>
+                <hr>
+                <div class="container mt-4">
+                    <h2 class="fw-bold text-center">Últimos partidos de Champions</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item">Benfica 4 - 5 Barcelona </li>
+                        <li class="list-group-item">Atlético Madrid 2 - 1 Leverkusen</li>
+                        <li class="list-group-item">Liverpool 2 - 1 LOSC</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-    <script>
-        let nav = document.getElementById("nav");
-        let spinner = document.getElementById("spinner");
-        nav.style.visibility = 'hidden';
-        setTimeout(() => {
-            spinner.remove();
-            nav.style.visibility = 'visible';
-        }, 2000);
-    </script>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

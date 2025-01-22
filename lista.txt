@@ -7,10 +7,10 @@ elementos de la página siguientes. X
 6. Imágenes. X
 7. Jumbotron/div. X
 8. Alerts. X
-9. Botones.
-10. Grupos de botones.
+9. Botones. X
+10. Grupos de botones. X
 11. Badges. X
-12. Barras de progreso.
+12. Barras de progreso. X
 13. Spinners. X
 14. Paginado. X
-15. List Groups.
+15. List Groups. X
